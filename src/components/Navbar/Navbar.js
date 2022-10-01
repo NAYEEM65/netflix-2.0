@@ -13,7 +13,9 @@ const Navbar = () => {
     };
     return (
         <div className="flex justify-between items-center p-4 z-[100] w-full absolute">
-            <h1 className="text-red-600 text-4xl font-bold cursor-pointer">Netflix</h1>
+            <Link to="/" className="text-red-600 text-4xl font-bold cursor-pointer">
+                Netflix
+            </Link>
             {user?.email ? (
                 <div>
                     <Link to="/account">
